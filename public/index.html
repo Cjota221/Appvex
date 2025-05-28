@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pages/configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Dashboard</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Cards de Estatísticas -->
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-dollar-sign text-success"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Faturamento Mensal</div>
+                        <div class="stats-value">R$ 28.750,00</div>
+                        <div class="stats-change positive">
+                            <i class="fas fa-arrow-up"></i> 15% em relação ao mês anterior
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-box text-info"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Produção Mensal</div>
+                        <div class="stats-value">1.250</div>
+                        <div class="stats-description">Unidades produzidas</div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-warehouse text-warning"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Valor em Estoque</div>
+                        <div class="stats-value">R$ 12.850,00</div>
+                        <div class="stats-description">15 tipos de insumos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficos -->
+            <div class="charts-row">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Vendas vs. Produção</div>
+                        <div class="chart-actions">
+                            <button class="btn btn-outline btn-icon">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <div class="chart-placeholder">
+                            <p class="text-center">Gráfico de Barras - Vendas vs. Produção (Simulação)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Fluxo de Caixa</div>
+                        <div class="chart-actions">
+                            <button class="btn btn-outline btn-icon">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <div class="chart-placeholder">
+                            <p class="text-center">Gráfico de Linha - Fluxo de Caixa (Simulação)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produtos Mais Vendidos -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Produtos Mais Vendidos</div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-file-export"></i> Exportar
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Código</th>
+                                    <th>Vendas</th>
+                                    <th>Receita</th>
+                                    <th>Custo</th>
+                                    <th>Lucro</th>
+                                    <th>Margem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Modelo XYZ</td>
+                                    <td>MOD001</td>
+                                    <td>150 unidades</td>
+                                    <td>R$ 13.485,00</td>
+                                    <td>R$ 6.870,00</td>
+                                    <td>R$ 6.615,00</td>
+                                    <td>49%</td>
+                                </tr>
+                                <tr>
+                                    <td>Modelo ABC</td>
+                                    <td>MOD002</td>
+                                    <td>120 unidades</td>
+                                    <td>R$ 7.188,00</td>
+                                    <td>R$ 3.756,00</td>
+                                    <td>R$ 3.432,00</td>
+                                    <td>48%</td>
+                                </tr>
+                                <tr>
+                                    <td>Modelo DEF</td>
+                                    <td>MOD003</td>
+                                    <td>85 unidades</td>
+                                    <td>R$ 5.091,50</td>
+                                    <td>R$ 2.975,00</td>
+                                    <td>R$ 2.116,50</td>
+                                    <td>42%</td>
+                                </tr>
+                                <tr>
+                                    <td>Modelo GHI</td>
+                                    <td>MOD004</td>
+                                    <td>65 unidades</td>
+                                    <td>R$ 2.985,00</td>
+                                    <td>R$ 1.885,00</td>
+                                    <td>R$ 1.100,00</td>
+                                    <td>37%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ordens de Produção Recentes -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Ordens de Produção Recentes</div>
+                    <div class="card-actions">
+                        <a href="pages/producao.html" class="btn btn-outline">
+                            <i class="fas fa-external-link-alt"></i> Ver Todas
+                        </a>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Modelo</th>
+                                    <th>Quantidade</th>
+                                    <th>Data de Início</th>
+                                    <th>Previsão de Término</th>
+                                    <th>Progresso</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>OP-2025-001</td>
+                                    <td>Modelo XYZ</td>
+                                    <td>150 unidades</td>
+                                    <td>15/05/2025</td>
+                                    <td>30/05/2025</td>
+                                    <td>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 75%"></div>
+                                        </div>
+                                        <div class="progress-text">75%</div>
+                                    </td>
+                                    <td><span class="badge badge-info">Em andamento</span></td>
+                                </tr>
+                                <tr>
+                                    <td>OP-2025-002</td>
+                                    <td>Modelo ABC</td>
+                                    <td>200 unidades</td>
+                                    <td>18/05/2025</td>
+                                    <td>02/06/2025</td>
+                                    <td>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 45%"></div>
+                                        </div>
+                                        <div class="progress-text">45%</div>
+                                    </td>
+                                    <td><span class="badge badge-info">Em andamento</span></td>
+                                </tr>
+                                <tr>
+                                    <td>OP-2025-003</td>
+                                    <td>Modelo DEF</td>
+                                    <td>100 unidades</td>
+                                    <td>20/05/2025</td>
+                                    <td>28/05/2025</td>
+                                    <td>
+                                        <div class="progress-bar">
+                                            <div class="progress" style="width: 20%"></div>
+                                        </div>
+                                        <div class="progress-text">20%</div>
+                                    </td>
+                                    <td><span class="badge badge-info">Em andamento</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
