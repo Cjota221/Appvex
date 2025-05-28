@@ -1,0 +1,210 @@
+/* 
+* VEX - Sistema de Gestão de Produção e Gestão Financeira
+* Estilos específicos para a página de Produção
+*/
+
+/* Cards de estatísticas específicos */
+.stats-card:nth-child(1)::before {
+  content: '\f275';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-info);
+}
+
+.stats-card:nth-child(2)::before {
+  content: '\f201';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-success);
+}
+
+.stats-card:nth-child(3)::before {
+  content: '\f0ae';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-warning);
+}
+
+.stats-card:nth-child(4)::before {
+  content: '\f017';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-danger);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: var(--spacing-lg);
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  color: var(--text-primary);
+}
+
+.tab-btn.active {
+  color: var(--text-primary);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-info);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Barra de progresso */
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--accent-success);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+/* Calendário */
+.calendar-container {
+  margin-bottom: var(--spacing-lg);
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.calendar-day-header {
+  background-color: var(--bg-tertiary);
+  padding: var(--spacing-sm);
+  text-align: center;
+  font-weight: 500;
+}
+
+.calendar-day {
+  background-color: var(--bg-secondary);
+  padding: var(--spacing-md);
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.calendar-day:hover {
+  background-color: var(--bg-tertiary);
+}
+
+.calendar-day.disabled {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+}
+
+.calendar-day.has-event::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--accent-info);
+}
+
+.events-list {
+  margin-top: var(--spacing-lg);
+}
+
+.event-item {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--bg-tertiary);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.event-time {
+  font-weight: 500;
+  color: var(--accent-info);
+  min-width: 60px;
+}
+
+.event-title {
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+}
+
+.event-details {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Responsividade específica para produção */
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+  
+  .calendar-grid {
+    font-size: 0.75rem;
+  }
+  
+  .calendar-day {
+    padding: var(--spacing-sm);
+  }
+  
+  .event-item {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+}
