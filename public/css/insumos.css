@@ -1,0 +1,56 @@
+/* 
+* VEX - Sistema de Gestão de Produção e Gestão Financeira
+* Estilos específicos para a página de Insumos
+*/
+
+/* Cards de estatísticas específicos */
+.stats-card:nth-child(1)::before {
+  content: '\f1b2';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-info);
+}
+
+.stats-card:nth-child(2)::before {
+  content: '\f0d6';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-success);
+}
+
+.stats-card:nth-child(3)::before {
+  content: '\f06a';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-danger);
+}
+
+.stats-card:nth-child(4)::before {
+  content: '\f1ad';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-warning);
+}
+
+/* Estilos para o modal de novo insumo */
+.form-row {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-row > * {
+  flex: 1;
+}
+
+/* Responsividade específica para insumos */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+}
