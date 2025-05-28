@@ -1,0 +1,199 @@
+/* 
+* VEX - Sistema de Gestão de Produção e Gestão Financeira
+* Estilos específicos para a página de Relatórios
+*/
+
+/* Cards de relatórios */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.report-card {
+  background-color: var(--surface-2);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  display: flex;
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.report-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--surface-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--spacing-md);
+  flex-shrink: 0;
+}
+
+.report-icon i {
+  font-size: 1.25rem;
+  color: var(--accent-primary);
+}
+
+.report-info {
+  flex: 1;
+}
+
+.report-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.report-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.report-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-left: var(--spacing-md);
+  flex-shrink: 0;
+}
+
+/* Modal de visualização de relatório */
+.modal-lg {
+  max-width: 900px;
+  width: 90%;
+}
+
+.report-preview {
+  padding: var(--spacing-md);
+}
+
+.report-preview-header {
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-md);
+}
+
+.report-preview-header h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.report-preview-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.report-preview-chart {
+  margin-bottom: var(--spacing-md);
+  height: 300px;
+}
+
+.report-preview-table {
+  overflow-x: auto;
+}
+
+.report-preview-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.report-preview-table th,
+.report-preview-table td {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+.report-preview-table th {
+  background-color: var(--surface-3);
+  font-weight: 600;
+}
+
+.report-preview-table tfoot th,
+.report-preview-table tfoot td {
+  font-weight: 600;
+  background-color: var(--surface-2);
+}
+
+/* Formulário de criação de relatório personalizado */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin: 0;
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+/* Responsividade específica para relatórios */
+@media (max-width: 1200px) {
+  .reports-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .checkbox-group {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .reports-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .report-card {
+    flex-direction: column;
+  }
+  
+  .report-icon {
+    margin-right: 0;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .report-actions {
+    margin-left: 0;
+    margin-top: var(--spacing-sm);
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .checkbox-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+}
