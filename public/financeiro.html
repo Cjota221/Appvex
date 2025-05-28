@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Financeiro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/financeiro.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Financeiro / Fluxo de Caixa</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Título da Página e Botões de Ação -->
+            <div class="page-header">
+                <h2 class="page-title">Financeiro / Fluxo de Caixa</h2>
+                <div class="action-buttons">
+                    <button class="btn btn-success">
+                        <i class="fas fa-plus"></i> Nova Entrada
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="fas fa-minus"></i> Nova Saída
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cards de Estatísticas -->
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-arrow-up text-success"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Entradas (Vendas)</div>
+                        <div class="stats-value">R$ 28.750,00</div>
+                        <div class="stats-change positive">
+                            <i class="fas fa-arrow-up"></i> 15% em relação ao mês anterior
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-arrow-down text-danger"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Saídas (Despesas)</div>
+                        <div class="stats-value">R$ 15.320,00</div>
+                        <div class="stats-change negative">
+                            <i class="fas fa-arrow-down"></i> 5% em relação ao mês anterior
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-balance-scale text-info"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Saldo Final</div>
+                        <div class="stats-value">R$ 13.430,00</div>
+                        <div class="stats-change positive">
+                            <i class="fas fa-arrow-up"></i> Lucro de 46,7%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráficos -->
+            <div class="charts-row">
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Distribuição de Despesas</div>
+                        <div class="chart-actions">
+                            <button class="btn btn-outline btn-icon">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <div class="chart-placeholder">
+                            <p class="text-center">Gráfico de Pizza - Distribuição de Despesas (Simulação)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-header">
+                        <div class="chart-title">Comparativo Mensal</div>
+                        <div class="chart-actions">
+                            <button class="btn btn-outline btn-icon">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="chart-content">
+                        <div class="chart-placeholder">
+                            <p class="text-center">Gráfico de Barras - Comparativo Mensal (Simulação)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtros e Busca -->
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label class="filter-label">Período:</label>
+                    <select class="filter-select">
+                        <option>Hoje</option>
+                        <option>Ontem</option>
+                        <option>Últimos 7 dias</option>
+                        <option selected>Últimos 30 dias</option>
+                        <option>Últimos 90 dias</option>
+                        <option>Este ano</option>
+                        <option>Personalizado</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Tipo:</label>
+                    <select class="filter-select">
+                        <option selected>Todos</option>
+                        <option>Entradas</option>
+                        <option>Saídas</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Categoria:</label>
+                    <select class="filter-select">
+                        <option selected>Todas</option>
+                        <option>Vendas</option>
+                        <option>Insumos</option>
+                        <option>Salários</option>
+                        <option>Impostos</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Aplicar Filtros</button>
+            </div>
+
+            <!-- Tabela de Transações -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Transações Recentes</div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-file-export"></i> Exportar
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Descrição</th>
+                                    <th>Categoria</th>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>25/05/2025</td>
+                                    <td>Venda de produtos - Lote #1234</td>
+                                    <td>Vendas</td>
+                                    <td><span class="badge badge-success">Entrada</span></td>
+                                    <td class="text-success">R$ 5.800,00</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>23/05/2025</td>
+                                    <td>Compra de tecidos</td>
+                                    <td>Insumos</td>
+                                    <td><span class="badge badge-danger">Saída</span></td>
+                                    <td class="text-danger">R$ 2.350,00</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>20/05/2025</td>
+                                    <td>Pagamento de salários</td>
+                                    <td>Salários</td>
+                                    <td><span class="badge badge-danger">Saída</span></td>
+                                    <td class="text-danger">R$ 8.500,00</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/financeiro.js"></script>
+</body>
+</html>
