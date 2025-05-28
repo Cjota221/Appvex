@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Calculadora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/calculadora.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Calculadora de Custos e Preços</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Título da Página -->
+            <div class="page-header">
+                <h2 class="page-title">Calculadora de Custos e Preços</h2>
+            </div>
+
+            <!-- Tabs de Calculadoras -->
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active">Preço de Venda</button>
+                    <button class="tab-btn">Margem de Lucro</button>
+                    <button class="tab-btn">Ponto de Equilíbrio</button>
+                    <button class="tab-btn">Custo de Produção</button>
+                </div>
+            </div>
+
+            <!-- Calculadora de Preço de Venda -->
+            <div class="calculator-container">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Calculadora de Preço de Venda</div>
+                    </div>
+                    <div class="card-content">
+                        <form class="calculator-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="custo-produto">Custo do Produto (R$)</label>
+                                    <input type="number" id="custo-produto" class="form-control" placeholder="0,00" step="0.01">
+                                </div>
+                                <div class="form-group">
+                                    <label for="margem-lucro">Margem de Lucro (%)</label>
+                                    <input type="number" id="margem-lucro" class="form-control" placeholder="0" min="0" max="100">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="impostos">Impostos (%)</label>
+                                    <input type="number" id="impostos" class="form-control" placeholder="0" min="0" max="100">
+                                </div>
+                                <div class="form-group">
+                                    <label for="despesas-adicionais">Despesas Adicionais (R$)</label>
+                                    <input type="number" id="despesas-adicionais" class="form-control" placeholder="0,00" step="0.01">
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button type="button" class="btn btn-primary">Calcular</button>
+                                <button type="reset" class="btn btn-outline">Limpar</button>
+                            </div>
+                        </form>
+
+                        <div class="calculator-result">
+                            <div class="result-header">Resultado</div>
+                            <div class="result-content">
+                                <div class="result-item">
+                                    <div class="result-label">Preço de Venda Sugerido:</div>
+                                    <div class="result-value">R$ 0,00</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Lucro por Unidade:</div>
+                                    <div class="result-value">R$ 0,00</div>
+                                </div>
+                                <div class="result-item">
+                                    <div class="result-label">Margem de Lucro Real:</div>
+                                    <div class="result-value">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Histórico de Cálculos -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Histórico de Cálculos</div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-trash"></i> Limpar Histórico
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Tipo de Cálculo</th>
+                                    <th>Custo do Produto</th>
+                                    <th>Margem de Lucro</th>
+                                    <th>Preço de Venda</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>26/05/2025</td>
+                                    <td>Preço de Venda</td>
+                                    <td>R$ 45,80</td>
+                                    <td>49%</td>
+                                    <td>R$ 89,90</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-redo"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>25/05/2025</td>
+                                    <td>Preço de Venda</td>
+                                    <td>R$ 62,30</td>
+                                    <td>48%</td>
+                                    <td>R$ 119,90</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-redo"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>24/05/2025</td>
+                                    <td>Margem de Lucro</td>
+                                    <td>R$ 35,50</td>
+                                    <td>40%</td>
+                                    <td>R$ 59,90</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-redo"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/calculadora.js"></script>
+</body>
+</html>
