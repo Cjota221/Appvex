@@ -1,0 +1,98 @@
+/* 
+* VEX - Sistema de Gestão de Produção e Gestão Financeira
+* Estilos específicos para a página de Calculadora
+*/
+
+/* Cards de estatísticas específicos */
+.calculator-form {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.calculator-result {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.calculator-result h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.result-item {
+  background-color: var(--bg-tertiary);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+}
+
+.result-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.result-value {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.result-chart-container {
+  height: 300px;
+  margin-top: var(--spacing-lg);
+}
+
+/* Detalhamento de impostos */
+.impostos-detalhamento {
+  margin-top: var(--spacing-lg);
+}
+
+.impostos-detalhamento h4 {
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsividade específica para calculadora */
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+  
+  .result-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+}
