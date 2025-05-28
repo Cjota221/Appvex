@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Insumos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/insumos.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Cadastro de Insumos</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Título da Página e Botão de Ação -->
+            <div class="page-header">
+                <h2 class="page-title">Cadastro de Insumos</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Novo Insumo
+                </button>
+            </div>
+
+            <!-- Filtros e Busca -->
+            <div class="filters-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar insumos...">
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option selected>Todos os tipos</option>
+                        <option>Tecidos</option>
+                        <option>Aviamentos</option>
+                        <option>Embalagens</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline">
+                    <i class="fas fa-filter"></i> Filtrar
+                </button>
+            </div>
+
+            <!-- Tabela de Insumos -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Lista de Insumos</div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-file-export"></i> Exportar
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nome</th>
+                                    <th>Tipo</th>
+                                    <th>Unidade</th>
+                                    <th>Fornecedor</th>
+                                    <th>Preço Unitário</th>
+                                    <th>Estoque</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>INS001</td>
+                                    <td>Tecido Algodão</td>
+                                    <td>Tecido</td>
+                                    <td>m</td>
+                                    <td>Têxtil Brasil</td>
+                                    <td>R$ 25,00</td>
+                                    <td>120</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>INS002</td>
+                                    <td>Linha Poliéster</td>
+                                    <td>Aviamento</td>
+                                    <td>unid</td>
+                                    <td>Armarinhos Silva</td>
+                                    <td>R$ 5,50</td>
+                                    <td>45</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>INS003</td>
+                                    <td>Botões Plásticos</td>
+                                    <td>Aviamento</td>
+                                    <td>pct</td>
+                                    <td>Armarinhos Silva</td>
+                                    <td>R$ 18,00</td>
+                                    <td>12</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>INS004</td>
+                                    <td>Zíper Metálico</td>
+                                    <td>Aviamento</td>
+                                    <td>unid</td>
+                                    <td>Armarinhos Silva</td>
+                                    <td>R$ 3,20</td>
+                                    <td>85</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>INS005</td>
+                                    <td>Embalagem Plástica</td>
+                                    <td>Embalagem</td>
+                                    <td>unid</td>
+                                    <td>Embalagens Express</td>
+                                    <td>R$ 0,75</td>
+                                    <td>350</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn edit">
+                                                <i class="fas fa-edit"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/insumos.js"></script>
+</body>
+</html>
