@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Modelos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/modelos.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Cadastro de Modelos</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Título da Página e Botão de Ação -->
+            <div class="page-header">
+                <h2 class="page-title">Cadastro de Modelos</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Novo Modelo
+                </button>
+            </div>
+
+            <!-- Filtros e Busca -->
+            <div class="filters-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar modelos...">
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option selected>Todos os modelos</option>
+                        <option>Ativos</option>
+                        <option>Inativos</option>
+                        <option>Em produção</option>
+                        <option>Descontinuados</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline">
+                    <i class="fas fa-filter"></i> Filtrar
+                </button>
+            </div>
+
+            <!-- Cards de Modelos -->
+            <div class="models-grid">
+                <div class="model-card">
+                    <div class="model-header">
+                        <h3 class="model-title">Modelo XYZ</h3>
+                        <div class="model-actions">
+                            <button class="action-btn edit">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="action-btn delete">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="model-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="model-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Custo Total:</span>
+                            <span class="detail-value">R$ 45,80</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Preço Sugerido:</span>
+                            <span class="detail-value">R$ 89,90</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Margem:</span>
+                            <span class="detail-value text-success">49%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Lucro por Unidade:</span>
+                            <span class="detail-value text-success">R$ 44,10</span>
+                        </div>
+                    </div>
+                    <div class="model-footer">
+                        <button class="btn btn-outline w-100">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-header">
+                        <h3 class="model-title">Modelo ABC</h3>
+                        <div class="model-actions">
+                            <button class="action-btn edit">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="action-btn delete">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="model-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="model-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Custo Total:</span>
+                            <span class="detail-value">R$ 62,30</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Preço Sugerido:</span>
+                            <span class="detail-value">R$ 119,90</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Margem:</span>
+                            <span class="detail-value text-success">48%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Lucro por Unidade:</span>
+                            <span class="detail-value text-success">R$ 57,60</span>
+                        </div>
+                    </div>
+                    <div class="model-footer">
+                        <button class="btn btn-outline w-100">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-header">
+                        <h3 class="model-title">Modelo DEF</h3>
+                        <div class="model-actions">
+                            <button class="action-btn edit">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="action-btn delete">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="model-image">
+                        <div class="placeholder-image">
+                            <i class="fas fa-image"></i>
+                        </div>
+                    </div>
+                    <div class="model-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Custo Total:</span>
+                            <span class="detail-value">R$ 38,50</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Preço Sugerido:</span>
+                            <span class="detail-value">R$ 79,90</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Margem:</span>
+                            <span class="detail-value text-success">52%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Lucro por Unidade:</span>
+                            <span class="detail-value text-success">R$ 41,40</span>
+                        </div>
+                    </div>
+                    <div class="model-footer">
+                        <button class="btn btn-outline w-100">
+                            <i class="fas fa-eye"></i> Ver Detalhes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/modelos.js"></script>
+</body>
+</html>
