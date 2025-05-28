@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Relatórios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/relatorios.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Relatórios</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Título da Página -->
+            <div class="page-header">
+                <h2 class="page-title">Relatórios</h2>
+            </div>
+
+            <!-- Tabs de Relatórios -->
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active">Produção</button>
+                    <button class="tab-btn">Financeiro</button>
+                    <button class="tab-btn">Estoque</button>
+                    <button class="tab-btn">Custos</button>
+                </div>
+            </div>
+
+            <!-- Filtros e Busca -->
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label class="filter-label">Período:</label>
+                    <select class="filter-select">
+                        <option>Hoje</option>
+                        <option>Ontem</option>
+                        <option>Últimos 7 dias</option>
+                        <option selected>Últimos 30 dias</option>
+                        <option>Últimos 90 dias</option>
+                        <option>Este ano</option>
+                        <option>Personalizado</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label class="filter-label">Formato:</label>
+                    <select class="filter-select">
+                        <option selected>PDF</option>
+                        <option>Excel</option>
+                        <option>CSV</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary">Gerar Relatório</button>
+            </div>
+
+            <!-- Cards de Relatórios -->
+            <div class="reports-grid">
+                <div class="report-card">
+                    <div class="report-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="report-content">
+                        <h3 class="report-title">Relatório de Produção</h3>
+                        <p class="report-description">Análise detalhada da produção, incluindo ordens concluídas, em andamento, eficiência e produtividade.</p>
+                        <div class="report-actions">
+                            <button class="btn btn-outline">
+                                <i class="fas fa-eye"></i> Visualizar
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-download"></i> Baixar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <div class="report-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="report-content">
+                        <h3 class="report-title">Relatório Financeiro</h3>
+                        <p class="report-description">Resumo financeiro com entradas, saídas, lucro, margem e análise de fluxo de caixa.</p>
+                        <div class="report-actions">
+                            <button class="btn btn-outline">
+                                <i class="fas fa-eye"></i> Visualizar
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-download"></i> Baixar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <div class="report-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <div class="report-content">
+                        <h3 class="report-title">Relatório de Estoque</h3>
+                        <p class="report-description">Situação atual do estoque, movimentações, itens críticos e valor total investido.</p>
+                        <div class="report-actions">
+                            <button class="btn btn-outline">
+                                <i class="fas fa-eye"></i> Visualizar
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-download"></i> Baixar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="report-card">
+                    <div class="report-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="report-content">
+                        <h3 class="report-title">Relatório de Custos</h3>
+                        <p class="report-description">Análise de custos fixos e variáveis, custo por unidade e comparativo mensal.</p>
+                        <div class="report-actions">
+                            <button class="btn btn-outline">
+                                <i class="fas fa-eye"></i> Visualizar
+                            </button>
+                            <button class="btn btn-outline">
+                                <i class="fas fa-download"></i> Baixar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Histórico de Relatórios -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Histórico de Relatórios</div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-trash"></i> Limpar Histórico
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nome do Relatório</th>
+                                    <th>Tipo</th>
+                                    <th>Período</th>
+                                    <th>Data de Geração</th>
+                                    <th>Formato</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Relatório de Produção - Maio 2025</td>
+                                    <td>Produção</td>
+                                    <td>01/05/2025 - 25/05/2025</td>
+                                    <td>26/05/2025</td>
+                                    <td>PDF</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="action-btn">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Relatório Financeiro - Abril 2025</td>
+                                    <td>Financeiro</td>
+                                    <td>01/04/2025 - 30/04/2025</td>
+                                    <td>02/05/2025</td>
+                                    <td>Excel</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="action-btn">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Relatório de Estoque - Abril 2025</td>
+                                    <td>Estoque</td>
+                                    <td>01/04/2025 - 30/04/2025</td>
+                                    <td>01/05/2025</td>
+                                    <td>PDF</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                            <button class="action-btn">
+                                                <i class="fas fa-download"></i>
+                                            </button>
+                                            <button class="action-btn delete">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/relatorios.js"></script>
+</body>
+</html>
