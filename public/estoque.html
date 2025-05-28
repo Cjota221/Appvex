@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEX - Estoque</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/estoque.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Menu Lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.svg" alt="VEX Logo" class="logo-icon">
+                    <span class="logo-text">VEX</span>
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="../index.html">
+                            <i class="fas fa-th-large"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="insumos.html">
+                            <i class="fas fa-boxes"></i>
+                            <span>Insumos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="modelos.html">
+                            <i class="fas fa-cubes"></i>
+                            <span>Modelos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="producao.html">
+                            <i class="fas fa-industry"></i>
+                            <span>Produção</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html">
+                            <i class="fas fa-calculator"></i>
+                            <span>Calculadora</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="financeiro.html">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Financeiro</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="estoque.html">
+                            <i class="fas fa-warehouse"></i>
+                            <span>Estoque</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="custos.html">
+                            <i class="fas fa-tags"></i>
+                            <span>Custos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="relatorios.html">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Relatórios</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="configuracoes.html">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="help-link">
+                    <i class="fas fa-question-circle"></i>
+                    <span>Ajuda & Suporte</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="header">
+                <h1 class="page-title">Gestão de Estoque</h1>
+                <div class="user-info">
+                    <div class="user-avatar">AD</div>
+                    <div class="user-name">Admin</div>
+                </div>
+            </div>
+
+            <!-- Título da Página e Botão de Ação -->
+            <div class="page-header">
+                <h2 class="page-title">Gestão de Estoque</h2>
+                <button class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Adicionar Entrada
+                </button>
+            </div>
+
+            <!-- Cards de Estatísticas -->
+            <div class="stats-grid">
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-boxes text-info"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Insumos em Estoque</div>
+                        <div class="stats-value">15</div>
+                        <div class="stats-description">Tipos de insumos cadastrados</div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-exclamation-triangle text-danger"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Estoque Crítico</div>
+                        <div class="stats-value">3</div>
+                        <div class="stats-description text-danger">Insumos abaixo do mínimo</div>
+                    </div>
+                </div>
+                <div class="stats-card">
+                    <div class="stats-icon">
+                        <i class="fas fa-dollar-sign text-success"></i>
+                    </div>
+                    <div class="stats-content">
+                        <div class="stats-title">Valor em Estoque</div>
+                        <div class="stats-value">R$ 12.850,00</div>
+                        <div class="stats-description">Total investido em insumos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filtros e Busca -->
+            <div class="filters-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar insumos...">
+                </div>
+                <div class="filter-group">
+                    <select class="filter-select">
+                        <option selected>Todos os status</option>
+                        <option>Em estoque</option>
+                        <option>Estoque baixo</option>
+                        <option>Estoque crítico</option>
+                    </select>
+                </div>
+                <button class="btn btn-outline">
+                    <i class="fas fa-filter"></i> Filtrar
+                </button>
+            </div>
+
+            <!-- Tabela de Controle de Estoque -->
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title">Controle de Estoque</div>
+                    <div class="card-actions">
+                        <button class="btn btn-outline">
+                            <i class="fas fa-file-export"></i> Exportar
+                        </button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Insumo</th>
+                                    <th>Unidade</th>
+                                    <th>Estoque Atual</th>
+                                    <th>Estoque Mínimo</th>
+                                    <th>Status</th>
+                                    <th>Valor Unitário</th>
+                                    <th>Valor Total</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tecido Algodão</td>
+                                    <td>m</td>
+                                    <td>120</td>
+                                    <td>50</td>
+                                    <td>
+                                        <div class="status-indicator status-success">
+                                            <div class="status-bar"></div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 25,00</td>
+                                    <td>R$ 3.000,00</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                            <button class="action-btn">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Linha Poliéster</td>
+                                    <td>unid</td>
+                                    <td>45</td>
+                                    <td>30</td>
+                                    <td>
+                                        <div class="status-indicator status-warning">
+                                            <div class="status-bar"></div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 5,50</td>
+                                    <td>R$ 247,50</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                            <button class="action-btn">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Botões Plásticos</td>
+                                    <td>pct</td>
+                                    <td>12</td>
+                                    <td>20</td>
+                                    <td>
+                                        <div class="status-indicator status-danger">
+                                            <div class="status-bar"></div>
+                                        </div>
+                                    </td>
+                                    <td>R$ 18,00</td>
+                                    <td>R$ 216,00</td>
+                                    <td>
+                                        <div class="table-actions">
+                                            <button class="action-btn">
+                                                <i class="fas fa-plus"></i>
+                                            </button>
+                                            <button class="action-btn">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/estoque.js"></script>
+</body>
+</html>
