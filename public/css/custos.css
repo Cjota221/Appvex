@@ -1,0 +1,144 @@
+/* 
+* VEX - Sistema de Gestão de Produção e Gestão Financeira
+* Estilos específicos para a página de Custos
+*/
+
+/* Cards de estatísticas específicos */
+.stats-card:nth-child(1)::before {
+  content: '\f0d6';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-info);
+}
+
+.stats-card:nth-child(2)::before {
+  content: '\f53a';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-success);
+}
+
+.stats-card:nth-child(3)::before {
+  content: '\f201';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-warning);
+}
+
+.stats-card:nth-child(4)::before {
+  content: '\f3d1';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: var(--accent-danger);
+}
+
+/* Tabelas específicas para custos */
+#tabelaCustosFixos th:nth-child(3),
+#tabelaCustosFixos td:nth-child(3),
+#tabelaCustosVariaveis th:nth-child(3),
+#tabelaCustosVariaveis td:nth-child(3),
+#tabelaCentroCustos th:nth-child(2),
+#tabelaCentroCustos td:nth-child(2),
+#tabelaCentroCustos th:nth-child(3),
+#tabelaCentroCustos td:nth-child(3),
+#tabelaCentroCustos th:nth-child(4),
+#tabelaCentroCustos td:nth-child(4) {
+  text-align: right;
+}
+
+#tabelaCentroCustos th:nth-child(5),
+#tabelaCentroCustos td:nth-child(5) {
+  text-align: center;
+}
+
+/* Indicadores de desempenho */
+.indicators-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.indicator-card {
+  background-color: var(--surface-2);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.indicator-title {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+  text-align: center;
+}
+
+.indicator-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.indicator-chart {
+  width: 100%;
+  height: 100px;
+  margin-bottom: var(--spacing-sm);
+}
+
+.indicator-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.indicator-label {
+  font-weight: 500;
+}
+
+.indicator-target {
+  color: var(--accent-info);
+}
+
+/* Responsividade específica para custos */
+@media (max-width: 1200px) {
+  .indicators-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  
+  .tab-btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-size: 0.875rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  #tabelaCustosFixos,
+  #tabelaCustosVariaveis,
+  #tabelaCentroCustos {
+    min-width: 800px;
+  }
+  
+  .indicators-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
